@@ -1662,16 +1662,17 @@ a:active {
   margin-top: -8vh;
 }
 .home-hero__img img {
-  max-width: 80rem;
+  max-width: 48vw;
 }
 @media (max-width: 812px) {
   .home-hero__img {
     order: 1;
     margin-top: 2rem;
     margin-left: -3vw;
+    align-self: flex-start;
   }
   .home-hero__img img {
-    max-width: 78%;
+    max-width: 71vw;
   }
 }
 .home-hero__banner {
