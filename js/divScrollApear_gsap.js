@@ -12,7 +12,7 @@ modulsGrid.forEach((item, i) => {
 	gsap.from(item, {
 		scrollTrigger: {
 			trigger: item,
-			start: "top 75%",
+			start: "top 85%",
 			end: "90% top",
 			// markers: true,
 			toggleActions: "play none none none",
