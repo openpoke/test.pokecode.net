@@ -168,6 +168,10 @@
 				font-weight: bold;
 				@include efecte-link2(var(--c-black), var(--c-primary));
 			}
+
+			b {
+				font-weight: bold;
+			}
 		}
 	}
 }

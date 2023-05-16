@@ -121,11 +121,11 @@ a:active {
 
 @font-face {
   font-family: "Söhne";
-  src: url("../fonts/TestSohne-Buch.ttf") format("ttf"), url("../fonts/TestSohne-Buch.eot") format("eot"), url("../fonts/TestSohne-Buch.woff") format("woff"), url("../fonts/TestSohne-Buch.svg") format("svg");
+  src: url("../fonts/soehne-buch.ttf") format("ttf"), url("../fonts/soehne-buch.eot") format("eot"), url("../fonts/soehne-buch.woff") format("woff"), url("../fonts/soehne-buch.woff2") format("woff2"), url("../fonts/soehne-buch.svg") format("svg");
 }
 @font-face {
   font-family: "SöhneBreit";
-  src: url("../fonts/TestSohneBreit-Dreiviertelfett.ttf") format("ttf"), url("../fonts/TestSohneBreit-Dreiviertelfett.eot") format("eot"), url("../fonts/TestSohneBreit-Dreiviertelfett.woff") format("woff"), url("../fonts/TestSohneBreit-Dreiviertelfett.svg") format("svg");
+  src: url("../fonts/soehne-breit-dreiviertelfett.ttf") format("ttf"), url("../fonts/soehne-breit-dreiviertelfett.eot") format("eot"), url("../fonts/soehne-breit-dreiviertelfett.woff") format("woff"), url("../fonts/soehne-breit-dreiviertelfett.woff2") format("woff2"), url("../fonts/soehne-breit-dreiviertelfett.svg") format("svg");
 }
 @font-face {
   font-family: "pokecode";
@@ -228,7 +228,7 @@ a:active {
   --c-primary: #ffe233;
   --c-primary-hover: #670c0c;
   --c-primary-soft: #f9e7e7;
-  --c-secundary: #f8f8f5;
+  --c-secundary: #f7f5e9;
   --c-secundary-soft: #c9f9f2;
   /* Margins */
   --mg-b-112: 16rem;
@@ -1149,6 +1149,9 @@ a:active {
   background-position: 0 100%;
   transition: background-position 0.3s;
 }
+.card-comentari__text p b {
+  font-weight: bold;
+}
 
 #equip .modul__grid {
   display: flex;
@@ -1662,17 +1665,16 @@ a:active {
   margin-top: -8vh;
 }
 .home-hero__img img {
-  max-width: 48vw;
+  max-width: 80rem;
 }
 @media (max-width: 812px) {
   .home-hero__img {
     order: 1;
     margin-top: 2rem;
     margin-left: -3vw;
-    align-self: flex-start;
   }
   .home-hero__img img {
-    max-width: 71vw;
+    max-width: 78%;
   }
 }
 .home-hero__banner {
