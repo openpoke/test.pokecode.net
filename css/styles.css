@@ -247,6 +247,11 @@ a:active {
     --fs-80: 4.2rem;
   }
 }
+@media (min-width: 1920px) {
+  :root {
+    --fs-80: 9.6rem;
+  }
+}
 @media (max-width: 812px) {
   :root {
     --mg-b-112: 6.4rem;
@@ -1665,7 +1670,7 @@ a:active {
   margin-top: -8vh;
 }
 .home-hero__img img {
-  max-width: 80rem;
+  max-width: 90vh;
 }
 @media (max-width: 812px) {
   .home-hero__img {
@@ -1750,7 +1755,7 @@ html {
 @media (min-width: 1920px) {
   body,
   html {
-    font-size: 65.7894736842%;
+    font-size: 69.4445%;
   }
 }
 @media (min-width: 3408px) {

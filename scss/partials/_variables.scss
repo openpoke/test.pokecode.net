@@ -39,6 +39,9 @@ $bp-desktop-5k: 4080px;
 		--fs-72: 4.2rem;
 		--fs-80: 4.2rem;
 	}
+	@media (min-width: $bp-min-desktop-xxl) {
+		--fs-80: 9.6rem;
+	}
 	/* Colors */
 	--c-transparent: transparent;
 	--c-black: #0f0d03;
