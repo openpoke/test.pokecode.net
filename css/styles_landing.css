@@ -310,12 +310,9 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--c-primary);
-  padding: 10em 5em 32em;
-}
-@media (max-width: 812px) {
-  .landing {
-    padding-bottom: 40em;
-  }
+  padding-inline: 4%;
+  padding-top: 10vh;
+  padding-bottom: 30vh;
 }
 
 header {
@@ -354,7 +351,7 @@ header h2 {
 header h4 {
   text-align: center;
   font-family: var(--ff-primary);
-  font-size: 0.24em;
+  font-size: 0.3em;
 }
 @media (max-width: 812px) {
   header h4 {
@@ -367,7 +364,7 @@ header h4 img {
 }
 
 .calendari {
-  margin-top: 4em;
+  margin-top: 8em;
 }
 .calendari ul {
   display: flex;
@@ -389,7 +386,7 @@ header h4 img {
 }
 .calendari ul li .hora {
   font-size: 0.65em;
-  color: var(--c-primary);
+  color: var(--c-white);
   padding: 0.3em 0.7em;
   border-radius: 1em;
   background-color: var(--c-red);
@@ -407,32 +404,50 @@ header h4 img {
 }
 
 .inscriute {
-  margin-top: 1em;
-  position: relative;
-  font-size: 3em;
-  color: var(--c-primary);
-  padding: 0.6em 1.9em 0.7em 2.2em;
-  border-radius: 1em;
-  background-color: var(--c-black);
+  margin-top: 8em;
 }
-.inscriute::before {
+.inscriute a {
+  position: relative;
+  font-size: 4em;
+  color: var(--c-primary);
+  background-color: var(--c-black);
+  border-radius: 1em;
+  padding: 0.6em 1.9em 0.7em 2.2em;
+}
+.inscriute a:hover {
+  background-color: var(--c-red);
+  color: white;
+}
+.inscriute a::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 40px;
-  left: -17px;
-  top: -20px;
+  width: 2.75em;
+  height: 100%;
+  left: -0.7em;
+  top: -0.8em;
   background: url(../imgs/dit.png) 0 0 no-repeat;
   background-size: cover;
   transform: rotate(19deg);
 }
-.inscriute:hover > a {
-  color: white;
+
+footer {
+  margin-top: 9.6rem;
+}
+footer p {
+  font-size: 3em;
+  text-align: center;
+  line-height: 120%;
+}
+footer p.logo {
+  font-size: 5.6em;
+}
+footer p a {
+  text-decoration: underline;
 }
 
 .personatges_1 {
   position: fixed;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
 }
 .personatges_1 img {
@@ -446,7 +461,7 @@ header h4 img {
 
 .personatges_2 {
   position: fixed;
-  bottom: 0;
+  bottom: -3px;
   right: 0;
 }
 .personatges_2 img {
