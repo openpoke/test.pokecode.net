@@ -1737,6 +1737,122 @@ a:active {
   }
 }
 
+.site-main {
+  width: 100%;
+}
+
+#pagina {
+  background-color: var(--c-primary);
+}
+#pagina .modul__grid {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gr-gap);
+}
+@media (min-width: 813px) {
+  #pagina .modul__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: var(--gc-gap);
+    grid-column-gap: var(--gc-gap);
+    row-gap: 0;
+    align-items: start;
+  }
+}
+#pagina .clients__text {
+  grid-column: 3/11;
+}
+#pagina .clients__text h1 {
+  font-family: var(--ff-secundary);
+  font-size: var(--fs-72);
+  line-height: 120%;
+  color: var(--c-black);
+  margin-bottom: 4.8rem;
+}
+#pagina .clients__text h3 {
+  font-family: var(--ff-secundary);
+  font-size: var(--fs-18);
+  line-height: 120%;
+  color: var(--c-black);
+  margin-bottom: 1.6rem;
+}
+#pagina .clients__text h3:not(:first-of-type) {
+  margin-top: 4rem;
+}
+#pagina .clients__text p,
+#pagina .clients__text li {
+  font-size: var(--fs-18);
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+#pagina .clients__text p a,
+#pagina .clients__text li a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#pagina .clients__text b {
+  font-weight: bold;
+}
+#pagina .clients__text ul {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+#pagina .clients__text ul li {
+  position: relative;
+}
+#pagina .clients__text ul li:before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--c-black);
+  border-radius: 100%;
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+}
+#pagina .clients__logos {
+  grid-column: 2/-2;
+  margin-top: 8rem;
+}
+@media (max-width: 812px) {
+  #pagina .clients__logos {
+    margin-top: 2.4rem;
+  }
+}
+#pagina .clients__logos__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gr-gap);
+  justify-items: center;
+}
+@media (min-width: 813px) {
+  #pagina .clients__logos__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap: var(--gc-gap);
+    grid-column-gap: var(--gc-gap);
+    row-gap: var(--gc-gap);
+    align-items: start;
+  }
+}
+#pagina .clients__logos__container img {
+  max-width: 75%;
+}
+@media (max-width: 812px) {
+  #pagina .clients__logos__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+  #pagina .clients__logos__container img {
+    max-width: calc(33% - 2.4rem);
+  }
+}
+
 body,
 html {
   scroll-behavior: smooth;
